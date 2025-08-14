@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>두 번째 열에 이름 출력</title>
+</head>
+<body>
+  <table border="1">
+    <tr>
+      <td>첫 번째 열</td>
+      <td id="second-col">여기에 이름이 들어갑니다</td>
+    </tr>
+  </table>
+
+  <script>
+    const name = prompt("이름을 입력하세요:");
+    const secondCell = document.getElementById("second-col");
+    secondCell.innerText = name;
+  </script>
+</body>
+</html>
