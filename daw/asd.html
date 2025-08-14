@@ -30,11 +30,6 @@
     </tr>
   </table>
 
-  <script>
-    let name = prompt("이름을 입력하세요:");
-    let secondCell = document.getElementById("second-col");
-    secondCell.innerText = name;
-  </script>
 <!-- sda -->
     <h1>출석부 <div id="clock"></div>
     </h1>
@@ -50,10 +45,12 @@
             <td>이름</td>
         </tr>
         <script>
-
+                let name = prompt("이름을 입력하세요:");
             for (let marisa = 1; marisa <= 14; marisa++) {
-                document.write("<tr><td>" + marisa + "</td><td> </td></tr>");
+                document.write("<tr><td>" + marisa + "</td><td id='names" + marisa + "'></td></tr>");
             }
+                let secondCell = document.getElementById("names5");
+    secondCell.innerText = name;
         </script>
     </table>
 
@@ -66,7 +63,6 @@
         console.log("hakurei ========= ");
         console.log(typeof hakurei);
     </script>
-
 
     <script>
         // function showTime(){
